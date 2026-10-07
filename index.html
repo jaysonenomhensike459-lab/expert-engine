@@ -1,0 +1,34 @@
+<input type="number" id="num1">
++
+<input type="number" id="num2">
+<button onclick="addNumbers()">Add</button>
+<button onclick="subtractNumbers()">Subtract</button>
+<button onclick="multiplyNumbers()">Multiply</button>
+<button onclick="divideNumbers()">Divide</button>
+<p id="result">Result will show here</p>
+<script>
+function addNumbers() {
+var a = document.getElementById('num1').value;
+var b = document.getElementById('num2').value;
+var sum = Number(a) + Number(b);
+document.getElementById('result').innerHTML = sum;
+}
+function subtractNumbers() {
+var a = document.getElementById('num1').value;
+var b = document.getElementById('num2').value;
+var diff = Number(a) - Number(b);
+document.getElementById('result').innerHTML = diff;
+}
+function multiplyNumbers() {
+var a = document.getElementById('num1').value;
+var b = document.getElementById('num2').value;
+var product = Number(a) * Number(b);
+document.getElementById('result').innerHTML = product;
+}
+function divideNumbers() {
+var a = document.getElementById('num1').value;
+var b = document.getElementById('num2').value;
+var quotient = Number(a) / Number(b);
+document.getElementById('result').innerHTML = quotient;
+}
+</script>
